@@ -50,6 +50,8 @@ body {
 }
 
 .main-container {
+  max-width: 600px;
+  max-height: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;

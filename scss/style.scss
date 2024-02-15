@@ -47,10 +47,10 @@ body{
     
     .navbar-title {
         max-width: 30%;
-      font-size:1rem; // Adjust as needed
-      margin: 0;
-      font-family: $head-text;
-      color: $primary-blue;
+        font-size:1rem; // Adjust as needed
+        margin: 0;
+        font-family: $head-text;
+        color: $primary-blue;
     }
   }
 
@@ -58,9 +58,12 @@ body{
     padding-top: 150px;
     background: linear-gradient(to bottom right, $primary-blue, #00B4DB); // Adjust gradient colors as needed
     height: 85vh;
+    
   }
   
   .main-container {
+    max-width: 600px;
+    max-height: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px; // Adjust gap between cards as needed
