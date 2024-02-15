@@ -19,7 +19,7 @@ body{
     border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
     border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
     .container {
-        background-color: #f0f0f0;
+        background-color: #ccc6c6b9;
         overflow: hidden; // Ensures child elements do not protrude beyond rounded corners
         width: 100%;
         max-width: 100%;
@@ -31,8 +31,8 @@ body{
         align-items: center;
         border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
     border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Adjust box-shadow as needed
-    transform: perspective(100px) rotateX(1deg); // Adjust transform for 3D effect
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4); // Adjust box-shadow as needed
+    
     }
     
     .navbar-brand {
@@ -68,7 +68,7 @@ body{
   }
   
   .card {
-    background-color: #f0f0f0; // Light gray background
+    background-color: #e0dbdbdb; // Light gray background
     border-radius: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); // Enhanced shadow effect
     padding: 10px;
@@ -92,11 +92,13 @@ body{
   .card i {
     font-size: 3rem; // Adjust icon size as needed
     margin-bottom: 10px; // Adjust spacing between icon and title
+    color: $primary-blue;
   }
   
   .card-title {
     margin: 0;
     font-size: 1.2rem; // Adjust title font size as needed
+    color: $primary-blue;
   }
 
   .footer {
