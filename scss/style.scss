@@ -1,0 +1,128 @@
+$primary-blue: #2E3192;
+$head-text: 'Archivo Black';
+$light-gray:rgb(188, 188, 189);
+
+
+body{
+    font-family: "Cabin";
+    background-color: $primary-blue;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; // Adjust as needed
+    background-color: transparent; // Transparent background
+    padding: 0;
+    border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
+    border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
+    .container {
+        background-color: #f0f0f0;
+        overflow: hidden; // Ensures child elements do not protrude beyond rounded corners
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
+    border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Adjust box-shadow as needed
+    transform: perspective(100px) rotateX(1deg); // Adjust transform for 3D effect
+    }
+    
+    .navbar-brand {
+        
+        max-width: 30%;
+        margin-right: 0px;
+        img{
+            width: 100%;
+        }
+        
+    }
+    
+    .navbar-title {
+        max-width: 30%;
+      font-size:1rem; // Adjust as needed
+      margin: 0;
+      font-family: $head-text;
+      color: $primary-blue;
+    }
+  }
+
+  .card__container {
+    padding-top: 150px;
+    background: linear-gradient(to bottom right, $primary-blue, #00B4DB); // Adjust gradient colors as needed
+    height: 85vh;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; // Adjust gap between cards as needed
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f0f0f0; // Light gray background
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); // Enhanced shadow effect
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; // Smooth transition for hover effect
+    text-decoration: none; // Remove underline from links
+    position: relative; // Ensure z-index works properly
+    z-index: 1; // Set z-index to create stacking context
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); // Enhanced shadow effect on hover
+    transform: scale(0.8); // Scale the card up slightly on hover
+    z-index: 2; // Increase z-index on hover to ensure it's above other cards
+  }
+  
+  .card i {
+    font-size: 3rem; // Adjust icon size as needed
+    margin-bottom: 10px; // Adjust spacing between icon and title
+  }
+  
+  .card-title {
+    margin: 0;
+    font-size: 1.2rem; // Adjust title font size as needed
+  }
+
+  .footer {
+    background-color: $primary-blue; // Solid background color
+    color: #fff; // Text color
+    padding: 20px;
+    height: 15vh;
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+    }
+  
+    img {
+      height: 30px; // Adjust logo height as needed
+      margin-bottom: 10px;
+      
+    }
+  
+    p {
+      margin: 0;
+      font-size: 0.6rem; // Adjust paragraph font size as needed
+    }
+  }

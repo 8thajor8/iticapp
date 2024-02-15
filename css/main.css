@@ -1,0 +1,116 @@
+body {
+  font-family: "Cabin";
+  background-color: #2E3192;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  padding: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.navbar .container {
+  background-color: #f0f0f0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transform: perspective(100px) rotateX(1deg);
+}
+.navbar .navbar-brand {
+  max-width: 30%;
+  margin-right: 0px;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+}
+.navbar .navbar-title {
+  max-width: 30%;
+  font-size: 1rem;
+  margin: 0;
+  font-family: "Archivo Black";
+  color: #2E3192;
+}
+
+.card__container {
+  padding-top: 150px;
+  background: linear-gradient(to bottom right, #2E3192, #00B4DB);
+  height: 85vh;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  transform: scale(0.8);
+  z-index: 2;
+}
+
+.card i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #2E3192;
+  color: #fff;
+  padding: 20px;
+  height: 15vh;
+}
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.footer img {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.footer p {
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+/*# sourceMappingURL=main.css.map */
