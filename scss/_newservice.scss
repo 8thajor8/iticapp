@@ -1,0 +1,85 @@
+$primary-blue: #2E3192;
+$head-text: 'Archivo Black';
+$light-gray:rgb(188, 188, 189);
+
+.request-service-form {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    
+    margin-bottom: 20px;
+    
+    width: 95%;
+    
+
+    form {
+        .form-group {
+            margin-bottom: 20px;
+            
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="date"],
+            input[type="number"],
+            select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 15px;
+                outline: none;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Apply box-shadow for effect
+                
+            }
+            .phone-input {
+                display: flex;
+                align-items: center;
+            
+                input[type="text"] {
+                    
+                    padding: 10px;
+                   
+                    outline: none;
+                    width:70%;
+                }
+            
+                input[type="text"]:first-child {
+                    margin-right: 10px; // Adjust margin between input fields
+                    width: 30%;
+                }
+            }
+            .file-upload{
+                width: 100%;
+            }
+            input[type="file"]::-webkit-file-upload-button {
+                /* Example styles */
+                padding: 5px 10px;
+                background-color: #da4444;
+                color: #fff;
+                border: none;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            
+        }
+
+        a{
+            padding: 10px 20px;
+            background-color: $primary-blue;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            &:hover {
+                background-color: #0374ed;
+            }
+        }
+    }
+}

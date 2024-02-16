@@ -1,6 +1,13 @@
+@import "login";
+@import "dashboard";
+@import "newservice";
+@import "confirmation";
+
+
 $primary-blue: #2E3192;
 $head-text: 'Archivo Black';
 $light-gray:rgb(188, 188, 189);
+$animation-delay: 0.1s;
 
 
 body{
@@ -14,7 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px; // Adjust as needed
-    background-color: transparent; // Transparent background
+    background-color: $primary-blue; // Transparent background
     padding: 0;
     border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
     border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
@@ -30,8 +37,10 @@ body{
         text-align: center;
         align-items: center;
         border-bottom-left-radius: 15px; // Adjust border radius for bottom corners
-    border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
-    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4); // Adjust box-shadow as needed
+        border-bottom-right-radius: 15px; // Adjust border radius for bottom corners
+        box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4); // Adjust box-shadow as needed
+        animation-duration: 3s;
+        animation-delay: 0.5;
     
     }
     
@@ -84,6 +93,17 @@ body{
     text-decoration: none; // Remove underline from links
     position: relative; // Ensure z-index works properly
     z-index: 1; // Set z-index to create stacking context
+    animation-duration: 1.5s;
+    &:nth-child(2) {
+      animation-delay: $animation-delay * 1;
+    }
+    &:nth-child(3) {
+        animation-delay: $animation-delay * 2;
+    }
+    &:nth-child(4) {
+        animation-delay: $animation-delay * 3;
+    }
+    
   }
   
   .card:hover {
