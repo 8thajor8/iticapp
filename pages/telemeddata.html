@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santa Teresa Urgent Care, part of Lifeguard Costa Rica, provides fast and reliable medical services in Santa Teresa, Puntarenas. Available 24/7 for emergency consultations, ambulance dispatch, medical consultations, stitches, wound care, and more. Contact us now for quality medical care when you need it most.">
+    <meta name="keywords" content="urgent care, doctor, Santa Teresa, Lifeguard Costa Rica, emergency medical services, ambulance dispatch, medical consultation, stitches, wound care, Puntarenas, medical clinic">
+    <link rel="icon" href="../assets/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/55d940ec4a.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Complete Your Data</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://lifeguardcostarica.com/home" target="_blank">
+                <img src="../assets/logo.svg" alt="lifeguard logo" height="50px">
+            </a>
+            <h1 class="navbar-title">ITIC Americas 2024</h1>
+            <a class="navbar-brand" href="https://www.itic.co/conference/americas/itic-americas-agenda/" target="_blank">
+                <img src="../assets/logo-itic.svg" alt="ITIC logo" height="50px">
+            </a>
+        </div>
+    </nav>
+
+    <div class="welcome-dashboard">
+        <div class="dashboard-header animate__animated animate__fadeIn">
+            <h1 class="dashboard-title">Please Enter Your Information</h1>
+            <div class="d-flex">
+                
+                <a href="../index.html" class="request-service-btn">Home</a>
+            </div>
+        </div>
+        <div class="request-service-form animate__slideInLeft animate__animated">
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group d-flex">
+                    <div >
+                        <label for="weight">Weight:</label>
+                        <input type="number" id="weight" name="weight" required>
+                    </div>
+                    <div class="mx-2">
+                        <label for="height">Height</label>
+                        <input type="number" id="height" name="height" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="medication">Usual Medication</label>
+                    <input type="text" id="medication" name="medication" required>
+                </div>
+                <div class="form-group">
+                    <label for="alergies">Known Alergies</label>
+                    <input type="text" id="alergies" name="alergies" required>
+                </div>
+                <div class="form-group">
+                    <label for="conditions">Prexistant Conditions</label>
+                    <input type="text" id="conditions" name="conditions" required>
+                </div>
+                
+                               
+                <div class="d-flex justify-content-center">
+                    <a href="./payment.html" >Next</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="https://lifeguardcostarica.com/home" target="_blank">
+                <img src="../assets/lifegardwhitesvg.svg" alt="Footer Logo">
+            </a>
+          
+          <p>Copyright © 2024 Lifeguard Costa Rica S.A. - All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</body>
+    <script>
+        AOS.init();
+       
+        function initMap() {
+        const map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 0, lng: 0 }, // Set the initial center of the map
+            zoom: 12 // Set the initial zoom level
+        });
+
+        // Add a marker to the map
+        const marker = new google.maps.Marker({
+            position: { lat: 0, lng: 0 }, // Set the initial position of the marker
+            map: map,
+            draggable: true // Allow the marker to be dragged by the user
+        });
+
+        // Listen for drag events on the marker
+        marker.addListener('dragend', function(event) {
+            const { lat, lng } = event.latLng.toJSON(); // Get the latitude and longitude of the marker position
+            console.log(`New marker position: ${lat}, ${lng}`);
+        });
+    }
+    </script>   
+</html>

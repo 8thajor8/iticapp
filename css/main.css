@@ -192,9 +192,7 @@
   margin-bottom: 5px;
   font-weight: bold;
 }
-.request-service-form form .form-group input[type=text],
-.request-service-form form .form-group input[type=date],
-.request-service-form form .form-group input[type=number],
+.request-service-form form .form-group input,
 .request-service-form form .form-group select {
   width: 100%;
   padding: 10px;
@@ -270,6 +268,60 @@
 
 .effect__confirmation {
   animation-delay: 0.3s;
+}
+
+.select__section {
+  padding-top: 70px;
+  background: linear-gradient(to bottom right, #2E3192, #00B4DB);
+  height: 85vh;
+}
+.select__section .select__container {
+  max-width: 200px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.select__section .select__container .card {
+  padding: 20px;
+}
+.select__section .btn-secondary {
+  background-color: #dadbdc;
+  color: #2E3192;
+  font-family: "Archivo Black";
+  margin-top: 40px;
+  padding: 15px;
+  border: 0;
+  border-radius: 25px;
+  width: 40%;
+}
+
+.payment__logos img {
+  margin: 5px;
+  height: 35px;
+  width: auto;
+}
+
+.loginbox__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  height: 85vh;
+  background: linear-gradient(to bottom, #2E3192, #6c9eff);
+}
+.loginbox__container .bluewaitroom {
+  background-color: #2E3192;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 25%;
+  margin-bottom: 10px;
+  animation-delay: 0.6s;
 }
 
 body {

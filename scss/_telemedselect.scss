@@ -1,0 +1,25 @@
+.select__section {
+    padding-top: 70px;
+    background: linear-gradient(to bottom right, $primary-blue, #00B4DB); // Adjust gradient colors as needed
+    height: 85vh;
+    .select__container {
+        max-width: 200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px; // Adjust gap between cards as needed
+        .card{
+            padding: 20px;
+        }
+      }
+     .btn-secondary {
+        background-color: #dadbdc;
+        color: #2E3192;
+        font-family: "Archivo Black";
+        margin-top: 40px;
+        padding: 15px;
+        border: 0;
+        border-radius: 25px;
+        width: 40%;
+    }
+  }
+
