@@ -8,7 +8,7 @@ $light-gray:rgb(188, 188, 189);
     justify-content: center;
     align-items: center;
     align-items: center;
-    height: 80vh;
+    margin-top: 70px;
     background: linear-gradient(to bottom, $primary-blue, #6c9eff); // Blue gradient background
     
     h2{
@@ -86,6 +86,7 @@ $light-gray:rgb(188, 188, 189);
         color: $primary-blue;
         font-family: $head-text;
         margin-top: 40px;
+        margin-bottom: 20px;
         padding: 15px;
         border: 0;
         border-radius: 25px;
@@ -96,5 +97,26 @@ $light-gray:rgb(188, 188, 189);
     .btn:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+   
+}
+
+@media only screen and (min-width: 768px) {
+        
+    .loginbox__container{
+        position: relative;
+        z-index: 1;
+        height: auto;
+        .login-container {
+            width: 30%; // Adjusted width for better desktop view
+            padding: 20px; // Increased padding for better desktop view
+             // Increased margin-top for better desktop view
+        }
+        .btn-secondary {
+            
+            width: 15%;
+            padding: 15px 0px;
+            
+        }
     }
 }

@@ -22,4 +22,22 @@
         width: 40%;
     }
   }
-
+  
+  @media only screen and (min-width: 768px) {
+        
+    .select__section{
+        position: relative;
+        z-index: 1;
+        padding-top: 100px;
+        .select__container {
+           
+        }
+        .btn-secondary {
+            
+            width: 10%;
+            padding: 10px 0px;
+            margin-bottom: 20px;
+            
+        }
+    }
+}

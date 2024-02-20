@@ -113,3 +113,22 @@ $animation-delay: 0.1s;
         
     }
 }
+
+@media only screen and (min-width: 768px) {
+        
+    .welcome-dashboard{
+        
+        .request-service-btn {
+            width: 15%; // Adjusted width for better desktop view
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .service-list{
+            padding: 0 50px;
+        }
+        
+    }
+}

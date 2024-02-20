@@ -33,3 +33,12 @@ $light-gray:rgb(188, 188, 189);
     
 }
 
+@media only screen and (min-width: 768px) {
+        
+    .bluehome{
+        
+        width: 10%; // Make buttons full-width for smaller screens
+        
+    }
+}
+

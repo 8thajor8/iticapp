@@ -22,6 +22,7 @@ $light-gray:rgb(188, 188, 189);
                 display: block;
                 margin-bottom: 5px;
                 font-weight: bold;
+                margin-right: 5px;
             }
 
             input,
@@ -77,6 +78,32 @@ $light-gray:rgb(188, 188, 189);
             text-decoration: none;
             &:hover {
                 background-color: #0374ed;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+        
+    .request-service-form{
+        display: flex;
+        width: 60%;
+        font-size: 0.8rem;
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 10px;
+            flex: 1;
+            align-items: flex-end;
+            
+            .form-group{
+               margin-right: 10px; 
+               display: flex;
+               align-items: center;
+               flex: 1 1 calc(50% - 20px);
+            }
+            a{
+                margin-bottom: 20px;
             }
         }
     }
