@@ -1,15 +1,37 @@
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .loginbox__container {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: center;
   margin-top: 70px;
-  background: linear-gradient(to bottom, #2E3192, #6c9eff);
+  background: linear-gradient(to bottom, rgb(51, 82, 150), #6c9eff);
 }
 .loginbox__container h2 {
-  color: #2E3192;
-  font-family: "Archivo Black";
+  color: rgb(51, 82, 150);
+  font-family: "AmsiPro-UltraItalic";
 }
 .loginbox__container .login-container {
   background-color: #dbdbdb;
@@ -56,19 +78,19 @@
   margin-bottom: 10px;
 }
 .loginbox__container .login-container .btn-primary {
-  background-color: #2E3192;
+  background-color: rgb(51, 82, 150);
   color: #fff;
 }
 .loginbox__container .login-container .forgot-password {
   margin-left: 5px;
-  color: #2E3192;
+  color: rgb(51, 82, 150);
   font-weight: bold;
   text-decoration: none;
 }
 .loginbox__container .btn-secondary {
   background-color: #dadbdc;
-  color: #2E3192;
-  font-family: "Archivo Black";
+  color: rgb(51, 82, 150);
+  font-family: "AmsiPro-UltraItalic";
   margin-top: 40px;
   margin-bottom: 20px;
   padding: 15px;
@@ -96,10 +118,26 @@
     padding: 15px 0px;
   }
 }
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
 .welcome-dashboard {
   margin-top: 100px;
   padding: 5px;
-  background: linear-gradient(to bottom, #2E3192, #6c9eff);
+  background: linear-gradient(to bottom, rgb(51, 82, 150), #6c9eff);
+  flex: 1;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -115,14 +153,14 @@
 .welcome-dashboard .dashboard-title {
   font-size: 25px;
   color: white;
-  font-family: "Archivo Black";
+  font-family: "AmsiPro-UltraItalic";
 }
 .welcome-dashboard .request-service-btn {
   padding: 10px;
   margin: 10px 10px 0px 0px;
   width: 40%;
-  background-color: #ccc;
-  color: #2E3192;
+  background-color: rgb(239, 62, 66);
+  color: white;
   font-weight: bold;
   border: none;
   border-radius: 15px;
@@ -203,6 +241,21 @@
     padding: 0 50px;
   }
 }
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
 .request-service-form {
   padding: 20px;
   background-color: #f0f0f0;
@@ -252,11 +305,12 @@
   color: #fff;
   border: none;
   border-radius: 15px;
+  font-weight: bold;
   cursor: pointer;
 }
 .request-service-form form a {
   padding: 10px 20px;
-  background-color: #2E3192;
+  background-color: rgb(51, 82, 150);
   color: #fff;
   border: none;
   border-radius: 15px;
@@ -291,8 +345,23 @@
     margin-bottom: 20px;
   }
 }
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
 .bluehome {
-  background-color: #2E3192;
+  background-color: rgb(51, 82, 150);
   color: #fff;
   margin-top: 40px;
   padding: 10px 15px;
@@ -326,9 +395,24 @@
     width: 10%;
   }
 }
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
 .select__section {
   padding-top: 70px;
-  background: linear-gradient(to bottom right, #2E3192, #00B4DB);
+  background: linear-gradient(to bottom right, rgb(51, 82, 150), #6c9eff);
   height: 85vh;
 }
 .select__section .select__container {
@@ -343,7 +427,7 @@
 .select__section .btn-secondary {
   background-color: #dadbdc;
   color: #2E3192;
-  font-family: "Archivo Black";
+  font-family: "AmsiPro-UltraItalic";
   margin-top: 40px;
   padding: 15px;
   border: 0;
@@ -384,11 +468,12 @@
   justify-content: center;
   align-items: center;
   align-items: center;
-  background: linear-gradient(to bottom, #2E3192, #6c9eff);
+  background: linear-gradient(to bottom, rgb(51, 82, 150), #6c9eff);
 }
 
 .bluewaitroom {
-  background-color: #2E3192;
+  background-color: rgb(51, 82, 150);
+  font-weight: bold;
   color: #fff;
   margin-top: 20px;
   padding: 10px 15px;
@@ -402,6 +487,7 @@
 
 .cancelwaitroom {
   background-color: red;
+  font-weight: bold;
   color: #fff;
   margin-top: 20px;
   padding: 10px 15px;
@@ -413,9 +499,24 @@
   animation-delay: 0.6s;
 }
 
+@font-face {
+  font-family: "AmsiPro-UltraItalic";
+  src: url("../fonts/AmsiPro-UltraItalic.ttf") format("woff2"), url("../fonts/AmsiPro-UltraItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-BlackItalic";
+  src: url("../fonts/AmsiPro-BlackItalic.ttf") format("woff2"), url("../fonts/AmsiPro-BlackItalic.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
+@font-face {
+  font-family: "AmsiPro-Regular";
+  src: url("../fonts/AmsiPro-Regular.ttf") format("woff2"), url("../fonts/AmsiPro-Regular.ttf") format("woff"); /* Older Browsers */
+  /* Add additional font formats as needed */
+}
 body {
-  font-family: "Cabin";
-  background-color: #2E3192;
+  font-family: "AmsiPro-Regular";
+  background-color: rgb(51, 82, 150);
 }
 
 .navbar {
@@ -423,7 +524,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #2E3192;
+  background-color: rgb(51, 82, 150);
   padding: 0;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -454,15 +555,15 @@ body {
 }
 .navbar .navbar-title {
   max-width: 30%;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0;
-  font-family: "Archivo Black";
-  color: #2E3192;
+  font-family: "AmsiPro-UltraItalic";
+  color: rgb(51, 82, 150);
 }
 
 .card__container {
   padding-top: 150px;
-  background: linear-gradient(to bottom right, #2E3192, #00B4DB);
+  background: linear-gradient(to bottom, rgb(51, 82, 150), #6c9eff);
   height: 85vh;
 }
 
@@ -510,17 +611,18 @@ body {
 .card i {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: #2E3192;
+  color: rgb(51, 82, 150);
 }
 
 .card-title {
   margin: 0;
   font-size: 1.2rem;
-  color: #2E3192;
+  color: rgb(51, 82, 150);
+  font-weight: 600;
 }
 
 .footer {
-  background-color: #2E3192;
+  background-color: rgb(239, 62, 66);
   color: #fff;
   padding: 20px;
   height: 15vh;
@@ -535,7 +637,7 @@ body {
   flex-direction: column;
 }
 .footer img {
-  height: 30px;
+  height: 50px;
   margin-bottom: 10px;
 }
 .footer p {

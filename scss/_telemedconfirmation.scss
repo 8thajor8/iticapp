@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     align-items: center;
-    
     background: linear-gradient(to bottom, $primary-blue, #6c9eff); // Blue gradient background
 
     
@@ -12,6 +11,7 @@
 
 .bluewaitroom{
     background-color: $primary-blue;
+    font-weight: bold;
     color: #fff;
     margin-top: 20px;
     padding: 10px 15px;
@@ -26,6 +26,7 @@
 
 .cancelwaitroom{
     background-color: red;
+    font-weight: bold;
     color: #fff;
     margin-top: 20px;
     padding: 10px 15px;

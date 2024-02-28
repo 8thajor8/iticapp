@@ -1,6 +1,32 @@
-$primary-blue: #2E3192;
-$head-text: 'Archivo Black';
+$primary-blue: rgb(51, 82, 150);
+$primary-red: rgb(239, 62, 66);
+$head-text: 'AmsiPro-UltraItalic';
+$secondary-headline: 'AmsiPro-BlackItalic';
 $light-gray:rgb(188, 188, 189);
+$aqua: rgb(147,212,218);
+$animation-delay: 0.1s;
+
+@font-face {
+    font-family: 'AmsiPro-UltraItalic';
+    src: url('../fonts/AmsiPro-UltraItalic.ttf') format('woff2'), /* Modern Browsers */
+         url('../fonts/AmsiPro-UltraItalic.ttf') format('woff');   /* Older Browsers */
+    /* Add additional font formats as needed */
+  }
+  
+  @font-face {
+    font-family: 'AmsiPro-BlackItalic';
+    src: url('../fonts/AmsiPro-BlackItalic.ttf') format('woff2'), /* Modern Browsers */
+         url('../fonts/AmsiPro-BlackItalic.ttf') format('woff');   /* Older Browsers */
+    /* Add additional font formats as needed */
+  }
+
+  @font-face {
+    font-family: 'AmsiPro-Regular';
+    src: url('../fonts/AmsiPro-Regular.ttf') format('woff2'), /* Modern Browsers */
+         url('../fonts/AmsiPro-Regular.ttf') format('woff');   /* Older Browsers */
+    /* Add additional font formats as needed */
+  }
+
 
 .request-service-form {
     padding: 20px;
@@ -62,6 +88,7 @@ $light-gray:rgb(188, 188, 189);
                 color: #fff;
                 border: none;
                 border-radius: 15px;
+                font-weight: bold;
                 cursor: pointer;
             }
             
